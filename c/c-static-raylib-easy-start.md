@@ -2,6 +2,8 @@
 
 ## prereqs
 
+### working debian build
+
 - gcc
 - make
 - git
@@ -16,7 +18,7 @@
 7. copy raylib.h from raylib repo to yourproject/include
 8. create a main.c with main function at min
 9. run `gcc main.c -o main -Iinclude -Llib -lraylib -lm -ldl -lpthread -lGL -lrt -lX11`
-10. create a .clangd file so your neovim/vscode/ knows where to look to find raylib.h
+10. if your create a .clangd file so your neovim/vscode/ knows where to look to find raylib.h
 
 ```yaml
 CompileFlags:
@@ -27,3 +29,7 @@ CompileFlags:
 
 > hint
 > create a makefile or justfile for step 9
+
+### working macos build
+
+### working asahi linux (fedora) build
