@@ -14,14 +14,14 @@
 - run
 
 ```shell
-make PLATFORM=PLATFORM_DESKTOP`
+make PLATFORM=PLATFORM_DESKTOP
 ```
 
 - cd to your project directory
 - create diretories for raylib header files
 
 ```shell
-mkdir include/ lib/`
+mkdir include/ lib/
 ```
 
 - copy libraylib.a from raylib repo to yourproject/lib/
@@ -30,7 +30,7 @@ mkdir include/ lib/`
 - run
 
 ```shell
-gcc -o main main.c -Iinclude -Llib -lraylib -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lm`
+gcc -o main main.c -Iinclude -Llib -lraylib -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lm
 ```
 
 #### starter example
