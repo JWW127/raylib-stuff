@@ -6,32 +6,40 @@
 - make
 - git
 
-### working macos apple silicon arm build
+### instructions
 
-- gcc
-- make
-- git
+- clone the repo
+  [https://github.com/raysan5/raylib.git](https://github.com/raysan5/raylib.git)
 
-1. clone the repo
-   [https://github.com/raysan5/raylib.git](https://github.com/raysan5/raylib.git)
+- after cloned cd raylib>src
 
-1. after cloned cd raylib>src
+- run
 
-1. run `make PLATFORM=PLATFORM_DESKTOP`
+```shell
+make PLATFORM=PLATFORM_DESKTOP`
+```
 
-1. cd to your project directory
+- cd to your project directory
 
-1. create diretories for raylib header files `mkdir include lib`
+- create diretories for raylib header files
 
-1. copy libraylib.a from raylib repo to yourproject/lib
+```shell
+mkdir include lib`
+```
 
-1. copy raylib.h from raylib repo to yourproject/include
+- copy libraylib.a from raylib repo to yourproject/lib
 
-1. create a main.c with main function at min
+- copy raylib.h from raylib repo to yourproject/include
 
-1. run `gcc -o main main.c -Iinclude -Llib -lraylib -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lm`
+- create a main.c with main function at min
 
-1. if your create a .clangd file so your neovim/vscode/ knows where to look to find raylib.h
+- run
+
+```shell
+gcc -o main main.c -Iinclude -Llib -lraylib -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lm`
+```
+
+> if your create a .clangd file so your neovim/vscode/ knows where to look to find raylib.h
 
 ```yaml
 CompileFlags:
@@ -66,6 +74,7 @@ ______________________________________________________________________
 ##### trouble shooting
 
 > [! TIP]
+>
 > create a makefile or justfile for step 9
 
 [wiki](https://github.com/raysan5/raylib/wiki)
