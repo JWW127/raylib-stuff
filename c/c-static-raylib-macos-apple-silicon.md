@@ -39,7 +39,7 @@ mkdir include lib`
 gcc -o main main.c -Iinclude -Llib -lraylib -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lm`
 ```
 
-> if your create a .clangd file so your neovim/vscode/ knows where to look to find raylib.h
+> if you create a .clangd file so your neovim/vscode/ knows where to look to find raylib.h
 
 ```yaml
 CompileFlags:
