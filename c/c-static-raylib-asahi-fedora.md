@@ -1,10 +1,17 @@
-# simple fast setup for static raylib build in c (macos arm64)
+# simple fast setup for static raylib build in c (asahi linux / fedora / apple silicon m2)
 
 ## prereqs
 
-- gcc (clang works too)
+- gcc
 - make
 - git
+- I had to install the following dependencies to get the make PLATFORM=PLATFORM_DESKTOP command to work
+
+```shell
+sudo dnf install libX11-devel libXrandr-devel libXi-devel libXcursor-devel mesa-libGL-devel pulseaudio-libs-devel libdrm-devel
+sudo dnf install libXinerama-devel
+
+```
 
 ### instructions
 
@@ -30,7 +37,7 @@ mkdir include lib`
 - run
 
 ```shell
-gcc -o main main.c -Iinclude -Llib -lraylib -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL -lm`
+gcc main.c -o main -Iinclude -Llib -lraylib -lm -ldl -lpthread -lGL -lrt -lX11`
 ```
 
 #### starter example
