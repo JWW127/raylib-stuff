@@ -28,12 +28,12 @@ make PLATFORM=PLATFORM_DESKTOP`
 - create diretories for raylib header files
 
 ```shell
-mkdir include lib`
+mkdir include/ lib/`
 ```
 
-- copy libraylib.a from raylib repo to yourproject/lib
-- copy raylib.h from raylib repo to yourproject/include
-- create a main.c with main function at min
+- copy libraylib.a from raylib repo to yourproject/lib/
+- copy raylib.h from raylib repo to yourproject/include/
+- create a main.c with main function at the minimum
 - run
 
 ```shell
@@ -75,4 +75,5 @@ CompileFlags:
   Add: [-Iinclude]
 ```
 
+check out official wiki if build commands aren't working
 [wiki](https://github.com/raysan5/raylib/wiki)
