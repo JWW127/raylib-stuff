@@ -14,8 +14,8 @@ sudo dnf install raylib-devel clang-devel glibc-devel glibc-headers llvm-devel
 
 ## confusion I had
 
-> the repo [https://github.com/raylib-rs/raylib-rs](https://github.com/raylib-rs/raylib-rs) is not the same name in the dependency you add in the cargo.toml
-> repo = raylib-rs
+> the repo [https://github.com/raylib-rs/raylib-rs](https://github.com/raylib-rs/raylib-rs) is not the same name in the dependency you add in the cargo.toml<br>
+> repo = raylib-rs <br>
 > cargo.toml = raylib = {version, features}
 
 ## hello world example code
@@ -40,4 +40,4 @@ fn main() {
 
 ## run
 
-- At this point you should need to call `cargo run`
+- At this point you just need to call `cargo run`
