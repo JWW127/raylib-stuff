@@ -1,4 +1,4 @@
-# simple fast setup for static raylib build in c (asahi linux / fedora / apple silicon m2)
+# Simple fast setup for static raylib build in c (asahi linux / fedora / apple silicon m2)
 
 ## prereqs
 
