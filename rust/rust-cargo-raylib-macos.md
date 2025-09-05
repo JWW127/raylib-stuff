@@ -1,18 +1,13 @@
-# Simple setup for Raylib-rs (Asahi Linux / Fedora / apple silicon m2)
+# Simple setup for Raylib-rs (macos arm64)
 
 ## prereqs
 
 - git
 
-## I had to add the following system level dependencies
+## Instructions
 
-```shell
-sudo dnf install raylib-devel clang-devel glibc-devel glibc-headers llvm-devel
-```
-
-## confusion I had
-
-> the repo [https://github.com/raylib-rs/raylib-rs](https://github.com/raylib-rs/raylib-rs) is not the same name in the dependency you add in the cargo.toml<br>
+- add raylib to cargo.toml dependencies
+- [https://github.com/raylib-rs/raylib-rs](https://github.com/raylib-rs/raylib-rs)
 
 ```toml
 [dependencies]
